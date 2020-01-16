@@ -1,0 +1,87 @@
+body {
+
+	zoom: 1; 
+}
+
+.site {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+
+	grid-template-areas:
+		"header header header header"
+		"sidebarLeft problemTextfield problemTextfield sidebarRight"
+		"sidebarLeft problemTextfield problemTextfield sidebarRight"
+		"timerTextfield typingTextfield typingTextfield refreshButton"
+		"footer footer footer footer";
+}	
+
+.header {
+	font-size: 72;
+	text-align: center;	
+	grid-area: header;
+	color: white;
+	background-color: orange;
+}
+
+.sidebarRight {
+	
+	background-color: green;
+}
+
+.sidebarLeft {
+
+	background-color: green;
+}
+
+
+.footer {
+	grid-area: footer;
+	background-color: purple;
+}
+
+.problemTextfield {
+
+	width: 50%;
+	height: 50%;
+	grid-area: problemTextfield; 
+	margin: auto;
+	text-align: justify;
+}
+
+.timerTextfield {
+
+	grid-area: timerTextfield; 
+	margin: auto;
+	text-align: center;
+}
+
+.typingTextfield {
+
+	grid-area: typingTextfield;	
+	width: 50%;
+	height: 50%;
+	margin: auto;
+}
+
+.refreshButton {
+
+	grid-area: refreshButton;
+	text-align: center;
+	margin: auto;
+}
+
+.highlightActive {
+
+	background-color: lightgrey;
+}
+
+.highlightRight {
+
+	background-color: #ccff99;
+}
+
+.highlightWrong {
+
+	background-color: #f05c79;
+}
